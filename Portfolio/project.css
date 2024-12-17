@@ -1,0 +1,133 @@
+*,
+::before,
+::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#con{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+hr{
+    background-color: black;
+    border: none;
+    height: 3px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+nav{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    background-color: 
+    #0c4160;
+    grid-column: 1;
+    grid-row: 1;
+}
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10%;
+    transition: color;
+    transition-duration: 1s;
+    transition-property: all;
+}
+nav li{
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all;
+    transition-duration: 2s;
+}
+nav li:hover{
+    background-color: #738fa7;
+    padding: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+nav a:checked{
+  color: rgb(235, 25, 25);
+}
+nav img{
+    margin-top: 23px;
+    padding:5px;
+   box-shadow: 0 0 10px black;
+   background-color: black;
+}
+footer{
+    border: 5px solid black;
+    margin-top: 60%;
+    width: 95%;
+    margin-left: 1%;
+ }
+#right{
+    background: rgb(12,65,96);
+    background: linear-gradient(90deg, rgba(12,65,96,1) 2%, rgba(7,19,48,1) 15%);
+}
+#right h1{
+    color: white;
+    font-size: 2.25rem;
+    text-align: center;
+   
+}
+.rightCon{
+    display: grid;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-columns: repeat(5 1fr);
+    height: 90vh;
+}
+#right a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#right button{
+    background-color:#738fa7 ;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 100%;
+    height: 40px;
+    transition: all;
+    transition-duration: 2s;
+}
+#right button:hover{
+   box-shadow: 10px; 
+
+ 
+}
+#right img{
+    height: 400px;
+    width:;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#Content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 20px;
+    width: 90%;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    white-space: nowrap;
+}
+@media only screen and (max-width:300px) {
+    #Content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <link rel="stylesheet" href="Account.css">
+</head>
+<body>
+    <div class="Con">
+        <header>
+        <h1>Create Account</h1>
+        <br>
+        <p >Fill in the details to get started</p>
+    </header>
+        <form>
+            <div class="Name">
+            <label for="Name">Full Name <span class="Star">*</span></label><br>
+            <input type="text" id="Name" name="Name" placeholder="John Doe" required>
+        </div>
+
+            <div class="Email">
+            <label for="Email"> Email Address<span class="Star">*</span></label><br>
+            <input type="email" id="Email" name="Email" placeholder="You@Example.com" required>
+        </div>
+
+            <div class="Password">
+            <label for="Pass">Password<span class="Star">*</span></label><br>
+            <input type="password" in="Pass" name="Pass" minlength="8" required>
+            <p>Must be atleast 8 characters long</p>
+        </div>
+
+        <div class="Role">
+            <label for="Role">Role</label> <br>
+            <select name="Role" id="Role">
+                <option value="" disabled selected>Select your role</option>
+                <option value="Cool">Cool</option>
+                <option value="UnCool">Uncool</option>
+            </select>
+        </div>
+
+        <div class="Bio">
+            <label for="Bio">Bio</label><br>
+            <textarea  placeholder="Tell us about yourself"></textarea> 
+            <p>Keep it short and sweet</p>
+        </div>
+
+        <div class="Agr">
+            <input type="Checkbox" id="Agr" name="Agr" required>
+            <label for="Agr" id="Agr" style="font-size: 0.8em;">I agree to the Terms and Conditions and Privacy policy <span class="Star">*</span></label>
+        </div>
+        <div id="Button">
+
+        <input type="submit" value="Submit" class="Sub">
+    </div>
+        </form>
+    </div>
+</body>
+</html>

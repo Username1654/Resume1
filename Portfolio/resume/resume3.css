@@ -1,0 +1,124 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(204, 200, 200);
+}
+.con{
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px black;
+}
+h1{
+    font-size: 2em;
+}
+
+
+.Gcon{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'left right right right'
+    'left right right right';
+
+}
+header{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 63);
+    color: white;
+    grid-area: header;
+}
+h2{
+    padding: 5px;
+    padding-top:15px;
+}
+.Column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+header img{
+    border-radius: 50%;
+    width:10em;
+    height:10em;
+    padding: 1em;
+}
+.Hright{
+    padding:4em;
+    justify-content: right;
+    text-align: center;
+}
+.left{
+    background-color: rgb(47, 47, 96);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 120vh;
+    grid-area: left;
+}
+.left hr{
+    background-color: rgb(255, 255, 255);
+    height: 0.2em;
+}
+.left ul,li{
+    list-style-type: none;
+    padding: 5px;
+}
+.List li{
+    background-color: rgb(76, 190, 190);
+border-radius: 5px;
+    margin: 5px;
+}
+.List li:hover{
+    background-color: blue;
+    text-align: center;
+}
+.List{
+    padding-top: 1em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Right{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 120vh;
+    grid-area: right;
+    
+}
+
+.Right hr{
+    background-color: blue;
+    height:0.2em
+}
+@media screen and (max-width:800px){
+.Gcon{
+   grid-template-areas: 
+   'header'
+   'left'
+   'right';
+}
+.left{
+  height: 80vh;
+}
+header img{
+    margin-left: 20%;
+}
+@media screen and (max-width:400px){
+    /* header h1{
+        font-size: 1em;
+    }
+   header p{
+        font-size: 0.5em;
+} */
+}

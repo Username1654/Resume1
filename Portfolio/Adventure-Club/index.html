@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel Club</title>
+    <link rel="stylesheet" href="Adventure.css">
+</head>
+<body>
+    <div class="Con">
+        
+        <header>
+            <h1>Adventure Travel Club</h1>
+            <p>Begin your journey with fellow adventurers</p>
+        </header>
+
+        <div class="About">
+            <h2>Personal Information</h2>
+            <hr>       
+         <form >
+            <div class="A">
+           <!--FN stands for first name while FNL stands for first name label, same concept applies to all-->
+          <label for="FN" id="FNL">First Name</label> 
+          <input type="text" id="FN" name="FN" required>
+                
+                
+            <label for="LN" id="LNL">Last Name</label> 
+            <input type="text" id="LN" name="LN" required>
+            
+           
+            <label for="EM" id="EML">Email Address</label>
+            <input type="text" id="EM" name="EM" required >
+
+            <label for="DOB" id="DOBL">Date Of Birth</label>
+            <input type="date" id="DOB" name="DOB" required >
+
+        </div>
+        </div>
+
+        <div class="Ad">
+            <h2>Adventure Preferences</h2>
+            <hr>
+            <!--AG stands for adventure grid-->
+            <div class="AG">
+                
+                <!-- <label for="Ex" style="padding-bottom: 10px;">Experience Level</label><br> -->
+                <p style="padding-bottom: 5px;">Experience Level</p>
+                <select name="Ex" id="Ex" required >
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Novice" >Novice</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="Expert">Expert</option>
+                </select>
+                <br>
+               <p style="padding-top: 10px;">Perferred Activities</p>
+                <br>
+                <div class="Check">
+                    <div class="Hiking r">
+                <input type="Checkbox" id="Hike" name="Hike">
+                <label for="Hike" id="HikeL">Hiking</label>
+            </div>
+            <div class="RockC r">
+                <input type="Checkbox" id="Rock" name="Rock">
+                <label for="Rock" id="RockL">Rock Climbing</label>
+            </div>
+            <div class="Kayak r">
+                <input type="Checkbox" id="Kaya" name="kaya">
+                <label for="Kaya" id="KayaL">Kayaking</label>
+            </div>
+            <div class="Scuba r">
+                <input type="Checkbox" id="Scu" name="Scu">
+                <label for="Scu" id="ScuL">Scuba Diving</label>
+            </div>
+            </div>
+                <br>
+                <p style="padding-bottom: 10px;">Preferred Trip Duration</p>
+                <div class="Radio">
+                    <div>
+                <input type="radio" id="Weekend" name="Trip" value="2-3">
+                <label for="Weekend" id="WEL">Weekend trips<br>(2-3 days)</label>
+            </div>
+                <div>
+                <input type="radio" id="Week" name="Trip" value="5-7">
+                <label for="Week" id="WL">Week-long Adventures<br>(5-7 days)</label>
+            </div>
+                <div>
+                <input type="radio" id="Extended" name="Trip" value="2+">
+                <label for="Extended" id="EXL">Extended Expeditions<br>(2+ weeks)</label>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="ADD">
+            <h2>Additional Information</h2>
+            <hr>
+           
+            <div>
+               <p>Fitness level(1-10)</p>
+               <input type="range"id="fit" min="1" max="10" value="10" style="margin-bottom: 1rem;" required> 
+            </div>
+            <div>
+               <label for="You">Tell us about yourself</label> <br>
+               
+               <textarea  placeholder="Tell us about yourself" rows="5" cols="5"></textarea> 
+            </div>
+            <div style="margin-top: 1rem; padding-bottom: 1rem;">
+                <label for="PFP" >Profile Photo</label> <br>
+                <input type="file" id="PFP" name="PFP" accept=".PNG, .JPEG, .GIF ">
+            </div>
+            
+        </div>
+        <div class="Agr">
+            <input type="Checkbox" id="Agr" name="Agr" required>
+            <label for="Agr" id="Agr">I agree to the Terms and Conditions and Privacy policy</label>
+        </div>
+        <div id="Button">
+        
+        <input type="submit" value="Submit" class="Sub">
+    </div>
+</form>
+    </div>
+</body>
+</html>

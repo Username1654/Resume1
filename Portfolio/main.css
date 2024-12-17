@@ -1,0 +1,129 @@
+*,
+::before,
+::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#con{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+hr{
+    background-color: black;
+    border: none;
+    height: 3px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+header{
+    text-align: center;
+    /* background-color:#071330; */
+    background: rgb(12,65,96);
+    background: linear-gradient(90deg, rgba(12,65,96,1) 2%, rgba(7,19,48,1) 15%);
+    grid-column: 2/4;
+    grid-row: 1;
+    color: white;
+
+}
+header h1{
+    letter-spacing: 1px;
+    padding-top: 4px;
+}
+header p{
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+header li{
+    list-style-type: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #738fa7;
+    color: black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Skills{
+   display:flex;
+   text-align: center;
+    flex-direction:row;
+   flex-wrap: wrap;
+   margin-right: 40px;
+    
+}
+#skills{
+    
+}
+
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color:#738fa7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+nav{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    background-color: 
+    #0c4160;
+    grid-column: 1;
+    grid-row: 1;
+  
+}
+nav a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10%;
+    transition: color;
+    transition-duration: 1s;
+    transition-property: all;
+}
+nav li{
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all;
+    transition-duration: 2s;
+}
+nav li:hover{
+    background-color: #738fa7;
+    padding: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+nav a:checked{
+  color: rgb(235, 25, 25);
+}
+nav img{
+    margin-top: 23px;
+    padding:5px;
+   box-shadow: 0 0 10px black;
+   background-color: black;
+}
+footer{
+    border: 5px solid black;
+    margin-top: 60%;
+    width: 95%;
+    margin-left: 1%;
+ }
